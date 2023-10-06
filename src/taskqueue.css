@@ -1,0 +1,11 @@
+.tasks-box { 
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left-container{
+    height: 900;
+    margin-left: 0 auto;
+    border: 1px solid;
+}

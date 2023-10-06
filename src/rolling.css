@@ -1,0 +1,75 @@
+#gameContainer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .rollingIndicator {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stoppedNumberIndicator {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00f; 
+    margin-bottom: 20px;
+  }
+  
+  #startStopRollButton {
+    background-color: #00f;
+    color: #fff; 
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #startStopRollButton:hover {
+    background-color: #007acc; 
+  }
+  
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px auto;
+    width: 200px;
+  }
+  
+  .grid-cell {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0; 
+    border: 2px solid #000000; 
+  }
+  
+  .grid-cell.active {
+    background-color: #00f; 
+    color: #fff; 
+  }
+
+  .numberCounter {
+    display: flex;
+    border: 2px solid #000000;   
+    margin: 20px auto;
+    justify-content: space-between;
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .numberCounter span {
+    display: inline-block;
+    margin-right: 5px;
+    border-right: 1px solid #ccc; 
+    padding-right: 5px;
+  }
