@@ -25,8 +25,8 @@ root.render(
     {/* <Task/> */}
     {/* <ColorSequence/> */}
     <BrowserRouter>
-    {/* <App/> */}
-    <Bingo/>
+      <App/>
+      {/* <Bingo/> */}
     </BrowserRouter>
   </React.StrictMode>
 );

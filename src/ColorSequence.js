@@ -77,7 +77,7 @@ export default function ColorSequence() {
                 width: "150px",
                 backgroundColor:
                   (isRolling && index === rollValue) || rollValue === index
-                    ? "grey"
+                    ? "white"
                     : color,
               }}
             ></div>
