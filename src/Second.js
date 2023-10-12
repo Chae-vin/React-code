@@ -1,29 +1,21 @@
-import React, { useState } from 'react';
-import { Grid } from '@mui/material';
-import Display from './Display';
+import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
-function Second() {
-  const [message, setMessage] = useState("");
+export default function Second() {
+  const [message, setMessage] = useOutletContext();
+  const [input, setInput] = useState(""); 
 
-  const onChange = (event) => {
-    setMessage(event.target.value);
+  const updateInput = (e) => {
+    setInput(e.target.value); 
+    setMessage(e.target.value); 
   };
 
   return (
-    <Grid>
-      <div paddingBottom='10px' style={{ display: 'flex', flexDirection: 'column', marginTop: '15px' }}>
-        <div paddingBottom='10px'>
-          <input
-            type='text'
-            value={message}
-            onChange={onChange}
-            style={{ width: '993px', height: '40px', border: '1px solid black', borderRadius: '6px' }}
-          />
-        </div>
-      </div>
-      <Display message={message} bgColor="#90EE90" child="second" />
-    </Grid>
+    <input
+      style={{ marginTop: 10, width: 995, height: 40, borderRadius: 10, border: "1px solid" }}
+      type="text"
+      value={input}
+      onChange={updateInput}
+    />
   );
 }
-
-export default Second;

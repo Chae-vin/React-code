@@ -12,6 +12,7 @@ import TaskQueue from "./TaskQueue";
 import ColorSequence from "./ColorSequence";
 import { BrowserRouter } from "react-router-dom";
 import Bingo from "./Bingo";
+import Lyrics from "./Lyrics";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -25,7 +26,7 @@ root.render(
     {/* <Task/> */}
     {/* <ColorSequence/> */}
     <BrowserRouter>
-      <App/>
+      <Lyrics/>
       {/* <Bingo/> */}
     </BrowserRouter>
   </React.StrictMode>
