@@ -1,0 +1,56 @@
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #829ca6;
+}
+
+.conlogo {
+  text-align: left;
+}
+
+.headlogo {
+  width: 15vw;
+}
+
+.bttn {
+  text-align: right; /* Align buttons to the right */
+  padding: 30px;
+}
+
+.noowrap {
+  white-space: nowrap;
+}
+
+.noowrap > .header-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-left: 50px; /* Adjusted margin to the left */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: color 0.3s, box-shadow 0.3s;
+}
+
+.noowrap > .header-link:hover {
+  color: #213555;
+}
+
+.noowrap > .header-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: height 0.3s, background-color 0.3s;
+}
+
+.noowrap > .header-link:hover::after {
+  height: 2px;
+  background-color: #BDBDBD;
+}

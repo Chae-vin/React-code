@@ -1,0 +1,30 @@
+.profile-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.profilePicture-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #213555cc;
+  height: 100%;
+  width: 45%;
+}
+.image-style {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.details-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #ffffff;
+  height: 100%;
+  width: 55%;
+}
+.center-style{
+  text-align: center;
+}
